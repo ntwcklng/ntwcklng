@@ -1,0 +1,22 @@
+{
+  "name": "next-blog",
+  "version": "0.0.1",
+  "description": "Next.js Blog Boilerplate",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "next",
+    "nextjs",
+    "zeit"
+  ],
+  "author": "Marvin Mieth <ntwcklng@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^2.0.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
