@@ -1,11 +1,17 @@
-import Link from 'next/prefetch'
+import Link from "next/link";
 
-export default ({links}) => (
+export default ({ links }) => (
   <div className="navbar">
     <ul>
-      {links.map(link => <li key={link.href}><Link href={link.href} prefetch><a>{link.title}</a></Link></li>)}
+      {links.map(link => (
+        <li key={link.href}>
+          <Link href={link.href} prefetch><a>{link.title}</a></Link>
+        </li>
+      ))}
     </ul>
-    <style jsx>{`
+    <style jsx>
+      {
+        `
       .navbar {
         position: fixed;
         top: 0;
@@ -24,6 +30,8 @@ export default ({links}) => (
         margin-right: 25px;
       }
 
-    `}</style>
+    `
+      }
+    </style>
   </div>
-)
+);
